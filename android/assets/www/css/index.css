@@ -1,0 +1,549 @@
+/* HEADER, SIDE, & CONTENT */
+#fixedheader
+{
+	display: none;
+
+	background-color:red;
+	width: 100%;
+	min-height: 50px;
+	height: 10%;
+	position: absolute;
+	z-index: 100;
+	top: -10%;
+
+}	
+
+#sidemenu
+{
+	display: none;
+	background-color:purple;
+	width: 75%;
+	height: 100%;
+	position: absolute;
+	z-index: 99;
+	right: -75%;
+	margin-top: 10%;
+	padding-top: 50px;
+}
+
+.sidetoggle
+{
+	position: absolute;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	background-color: green;
+}
+
+.backbutton
+{
+	width: 50px;
+	height: 50px;
+	background-color: orange;
+	position: absolute;
+	left: 0;
+}
+
+.pcontent
+{
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 40px;
+	margin-top: 10%;
+}
+
+/* HOME STYLES */
+#page_home
+{
+	height: 100% !important; 
+	position:relative !important;
+	overflow: hidden;
+}
+
+
+.hrow
+{
+	display: block;
+	margin: auto;
+	height: 47%;
+
+}
+
+.hitem
+{
+	/*
+	text-align: left;
+	display: inline-block;
+	width: 40%;
+
+	height: 40%;
+	margin: 10px;
+	overflow: hidden;
+	*/
+	display: inline-block;
+    position: relative;
+    width: 45%;
+	margin: 5px;
+
+}
+
+.hdummy 
+{
+    margin-top: 100%; 
+}
+
+.helement 
+{
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: silver 
+}
+
+.hscan
+{
+	background-color: red;
+}
+
+.hfiles
+{
+	background-color: green;
+}
+
+.hhelp
+{
+	background-color: blue;
+}
+
+.hconfig
+{
+	background-color: purple;
+}
+
+
+/* SPLASH STYLES */
+
+#page_splash
+{
+	height: 100% !important; 
+	position:relative !important;
+	background-color: white;
+	z-index: 101;
+}
+
+.splashopen
+{
+	display: none;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30%;
+	min-height: 200px;
+	z-index:50;
+}
+
+.biglogo
+{
+	width: 150px;
+	height: 150px;
+	background-color:red;
+	margin: auto;
+}
+
+.foot
+{
+	position: absolute !important;
+    bottom: 0;
+	left: 0;
+    width: 100%;
+	background-color: white;
+	margin: auto;
+}
+
+.swipe
+{
+	height: 200px;
+	width: 100%;
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	
+}
+
+.swipetext
+{
+	font-size: 20px;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	margin: auto;
+}
+
+.signchoice
+{
+	display: none;
+	height: 200px;
+	width: 100%;
+	font-size: 25px;
+	text-align: center;
+}
+
+	.signchoice div
+	{
+		position: absolute;
+		bottom: 100px;
+		width: 100%;
+		left: 0;
+		cursor: pointer;
+	}
+
+	.signchoice div span
+	{
+		padding: 0px 8px 0px 8px;
+	}
+
+.signin, .signup, .nregular
+{
+	display: none;
+	height: 200px;
+	width: 100%;
+	font-size: 15px;
+	margin:auto;
+	
+}
+
+.sdiv
+{
+	padding: 5px 0px 5px 0px;
+	clear:both;
+}
+
+.stext
+{
+	display: inline-block;
+	width: 100px;
+	padding-left: 10px;
+}
+
+.sfield
+{
+	display: inline-block;
+	width: auto;	
+}
+
+.sbtn
+{
+	padding: 10px 0px 0px 10px;
+}
+
+.sbtn a
+{
+	text-decoration: none;
+}
+
+.btn
+{
+	height: 30px;
+	display: inline;
+	width: auto;
+	color: white;
+	vertical-align: text-bottom;
+	padding: 10px;
+	margin-right: 10px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.bck
+{
+	background-color: grey;
+}
+
+.lgn
+{
+	background-color: orange;
+}
+
+.nregular
+{
+
+}
+
+.nchoice
+{
+	text-align: center;
+	
+}
+
+.nchoice div
+{
+	padding: 20px 0px 20px 0px;
+	margin: 10px 0px 10px 0px;
+	cursor: pointer;
+}
+
+.nfb
+{
+	background-color: blue;
+	color: white;
+}
+
+.nem
+{
+	background-color: green;
+	color: white;
+}
+
+.ui-hide-label
+{
+	border: none !important; 
+	width: 50% !important;
+	max-width: 500px;
+}
+
+
+
+
+
+
+
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+	
+}
+
+/* Portrait layout (default) */
+.app {
+    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    position:absolute;             /* position in the center of the screen */
+    left:50%;
+    top:50%;
+    height:50px;                   /* text area height */
+    width:225px;                   /* text area width */
+    text-align:center;
+    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+.bubblingG {
+text-align: center;
+width:80px;
+height:50px;
+}
+
+.bubblingG span {
+display: inline-block;
+vertical-align: middle;
+width: 10px;
+height: 10px;
+margin: 25px auto;
+background: #000000;
+-moz-border-radius: 50px;
+-moz-animation: bubblingG 1.3s infinite alternate;
+-webkit-border-radius: 50px;
+-webkit-animation: bubblingG 1.3s infinite alternate;
+-ms-border-radius: 50px;
+-ms-animation: bubblingG 1.3s infinite alternate;
+-o-border-radius: 50px;
+-o-animation: bubblingG 1.3s infinite alternate;
+border-radius: 50px;
+animation: bubblingG 1.3s infinite alternate;
+}
+
+#bubblingG_1 {
+-moz-animation-delay: 0s;
+-webkit-animation-delay: 0s;
+-ms-animation-delay: 0s;
+-o-animation-delay: 0s;
+animation-delay: 0s;
+}
+
+#bubblingG_2 {
+-moz-animation-delay: 0.39s;
+-webkit-animation-delay: 0.39s;
+-ms-animation-delay: 0.39s;
+-o-animation-delay: 0.39s;
+animation-delay: 0.39s;
+}
+
+#bubblingG_3 {
+-moz-animation-delay: 0.78s;
+-webkit-animation-delay: 0.78s;
+-ms-animation-delay: 0.78s;
+-o-animation-delay: 0.78s;
+animation-delay: 0.78s;
+}
+
+@-moz-keyframes bubblingG {
+0% {
+width: 10px;
+height: 10px;
+background-color:#000000;
+-moz-transform: translateY(0);
+}
+
+100% {
+width: 24px;
+height: 24px;
+background-color:#FFFFFF;
+-moz-transform: translateY(-21px);
+}
+
+}
+
+@-webkit-keyframes bubblingG {
+0% {
+width: 10px;
+height: 10px;
+background-color:#000000;
+-webkit-transform: translateY(0);
+}
+
+100% {
+width: 24px;
+height: 24px;
+background-color:#FFFFFF;
+-webkit-transform: translateY(-21px);
+}
+
+}
+
+@-ms-keyframes bubblingG {
+0% {
+width: 10px;
+height: 10px;
+background-color:#000000;
+-ms-transform: translateY(0);
+}
+
+100% {
+width: 24px;
+height: 24px;
+background-color:#FFFFFF;
+-ms-transform: translateY(-21px);
+}
+
+}
+
+@-o-keyframes bubblingG {
+0% {
+width: 10px;
+height: 10px;
+background-color:#000000;
+-o-transform: translateY(0);
+}
+
+100% {
+width: 24px;
+height: 24px;
+background-color:#FFFFFF;
+-o-transform: translateY(-21px);
+}
+
+}
+
+@keyframes bubblingG {
+0% {
+width: 10px;
+height: 10px;
+background-color:#000000;
+transform: translateY(0);
+}
+
+100% {
+width: 24px;
+height: 24px;
+background-color:#FFFFFF;
+transform: translateY(-21px);
+}
+
+} 

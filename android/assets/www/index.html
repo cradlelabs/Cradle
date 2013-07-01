@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/jqm131.css" />
+
+        <title>Cradle</title>
+		
+    </head>
+    <body>
+	<!-- SPLASH PAGE -->
+	<div data-role="page" id="page_splash">
+		<div data-role="content">
+			<div class="biglogo">C</div>
+			
+			<div class="swipe foot"><span class="swipetext">&nbsp;</span></div>	
+			
+			<div class="signchoice foot">
+				<div>
+				<span id="sin">Sign In</span> | 
+				<span id="nuser"> New User</span>
+				</div>
+			</div>
+			
+			<div class="signin foot">
+				<center>
+
+				<div data-role="fieldcontain" class="ui-hide-label" style="">
+					<label for="stextu">Username:</label>
+					<input type="text" name="stextu" id="stextu" value="" placeholder="Username"/>
+				</div>
+				
+				<div data-role="fieldcontain" class="ui-hide-label" style="">
+					<label for="stextp">Password:</label>
+					<input type="password" name="stextp" id="stextp" value="" placeholder="Password"/>
+				</div>
+
+				
+				
+				<div class="sbtn">
+					<div class="bck btn sbck" >Back</div>
+					<div class="lgn btn blogin">Login</div>
+				</div>
+				</center>
+			</div>
+			
+			<div class="signup foot">
+				<div class="nchoice">
+					<div class="nfb">Connect With Facebook</div>
+					or
+					<div class="nem">Email</div>
+				</div>
+			</div>
+			
+			<div class="nregular foot">
+				<center>
+
+				
+				<div data-role="fieldcontain" class="ui-hide-label" style="">
+					<label for="ntextu">Username:</label>
+					<input type="text" name="ntextu" id="ntextu" value="" placeholder="Username"/>
+				</div>
+				
+				<div data-role="fieldcontain" class="ui-hide-label" style="">
+					<label for="ntextp">Password:</label>
+					<input type="password" name="ntextp" id="ntextp" value="" placeholder="Password"/>
+				</div>
+				
+				<div class="sbtn">
+					<div class="bck btn nbck">Back</div>
+					<div class="lgn btn bsignup">Sign Up</div>
+				</div>
+				</center>
+			</div>
+		
+		</div>
+		
+		<!-- Opening Cradle -->
+		<div class="splashopen">
+		<center><div>Opening Your Cradle...</div><div class='bubblingG'><span id='bubblingG_1'></span><span id='bubblingG_2'></span><span id='bubblingG_3'></span></div></center>
+		</div>
+			
+	</div>
+	
+	<!-- FIXED HEADER -->
+	<div id="fixedheader">
+		<div class="sidetoggle">Hit meh!</div>
+		<a href="" data-rel="back"><div class="backbutton">Back</div></a>
+	</div>
+	
+	<!-- Sliding Side Menu -->
+	<div id="sidemenu">
+		side menu
+		<button class="blogout">LOGOUT</button>
+	</div>
+	
+	<!-- HOME PAGE -->
+	<div data-role="page" data-transition="flow" id="page_home">
+	<div class="pcontent">		
+		<div class="hrow">
+			
+			<div class="hitem ">
+				<div class="hdummy"></div>
+				<a href="scan.html" >
+				<div class="helement hscan">
+				<img src="http://25.media.tumblr.com/402f1982e877795cf5f5e2bdc73e9f0c/tumblr_mogx6u3gtM1qfy7xzo1_500.jpg" height=100% width=100%/>
+				</div>
+				</a>
+				
+			</div>
+			
+			
+			<div class="hitem ">
+				<div class="hdummy"></div>
+				<a href="files.html" >
+				<div class="helement hfiles">
+				Files
+				</div>
+				</a>
+			</div>
+		</div>
+		
+		<div class="hrow">
+			<div class="hitem ">
+				<div class="hdummy"></div>
+				<a href="help.html" >
+				<div class="helement hhelp">
+				Help
+				</div>	
+				</a>				
+			</div>
+			
+			<div class="hitem ">
+				<div class="hdummy"></div>
+				<a href="config.html" >
+				<div class="helement hconfig">
+				Config
+				</div>
+				</a>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	
+		<!-- POPUP DIV (ERROR) -->
+
+	
+
+
+		
+		
+        <script type="text/javascript" src="cordova-2.6.0.js"></script>
+		<script src="js/jquery191.js"></script>
+		<script src="js/logic.js"></script>
+		<script src="js/jqm131.js"></script>
+		<script>app.initialize();</script>
+
+		
+    </body>
+</html>
