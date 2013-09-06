@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Preview</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	
+</head> 
+
+<body id="preview"> 
+	<div class="pcontent">
+		<div class="prevcontent">
+		<iframe frameBorder="0" class="prev_frame" rel=external seamless></iframe>
+		</div>
+		<div class="foot"><div data-role="button" data-inline="true" style="float:left;">Delete</div><div data-role="button" data-inline="true" style="float:right;">Share</div></div>
+		
+	</div>
+
+<script>
+slam = '<iframe src="'+s3url+"/"+cradle.fhash+'" frameBorder="0" class="prev_frame" rel=external seamless></iframe>';
+		//$(".prev_frame").attr("src", s3url+"/"+fhash);
+		$(".prevcontent").html(slam);
+</script>
+</body>
+
+</html>
